@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Pinnacle Properties | Short-term rental management in St. Augustine, FL</title>
+<meta name="description" content="DC Pinnacle Properties manages short-term rental homes in St. Augustine, Florida. Owners: let's talk about your property. Guests: book our featured home on Airbnb.">
+<link rel="icon" href="images/logo-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#11202b;--potomac:#24465c;--marble:#f5f6f4;--brass:#a98550;--mist:#dde4e6;--white:#fff;
+--serif:'Marcellus','Times New Roman',serif;--sans:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--marble);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;letter-spacing:.01em}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+h3{font-size:1.25rem;margin-bottom:.4rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+section{padding:5.5rem 0}
+.lead{max-width:60ch;color:#3d4d57}
+.btn{display:inline-block;padding:.95rem 1.7rem;background:var(--brass);color:var(--ink);font-weight:600;text-decoration:none;border-radius:2px;border:1px solid var(--brass);transition:background .2s,color .2s;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:var(--white);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.btn.dark:hover{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+header{position:absolute;inset:0 0 auto 0;z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;color:var(--white)}
+nav img{height:64px;width:auto;display:block}
+nav ul{display:flex;gap:1.8rem;list-style:none;padding:0;align-items:center}
+nav ul a{text-decoration:none;font-size:.95rem}
+nav ul a:not(.btn):hover{text-decoration:underline;text-underline-offset:6px}
+nav .btn{padding:.7rem 1.2rem}
+@media(max-width:820px){nav ul li:not(:last-child){display:none}}
+.hero{min-height:94vh;display:flex;align-items:flex-end;color:var(--white);padding:0 0 5rem;
+background:linear-gradient(to top,rgba(17,32,43,.92),rgba(17,32,43,.35) 65%,rgba(17,32,43,.5)),url('images/living-wide.jpg') center/cover,var(--potomac)}
+.hero h1{font-size:clamp(2.5rem,6.5vw,4.6rem);max-width:17ch;margin-bottom:1.2rem}
+.hero p{max-width:52ch;font-size:1.15rem;margin-bottom:2rem;color:#e6ecee}
+.actions{display:flex;gap:1rem;flex-wrap:wrap}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem 3rem;margin-top:3rem}
+.services h3{border-top:2px solid var(--brass);padding-top:1rem}
+.services p{color:#3d4d57;font-size:.98rem}
+@media(max-width:820px){.services{grid-template-columns:1fr;gap:2rem}}
+.dark-band{background:var(--potomac);color:var(--white)}
+.dark-band .lead,.dark-band p{color:#d3dde1}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.photo{aspect-ratio:3/2;background:var(--mist) center/cover;border-radius:2px}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:2rem}.photo{aspect-ratio:3/2}}
+.facts{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin:1.2rem 0 1.6rem;font-weight:500}
+.facts li strong{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--brass);margin-right:.3rem}
+.amenities{list-style:none;padding:0;columns:2;gap:2rem;margin:0 0 2rem}
+.amenities li{padding:.4rem 0;border-bottom:1px solid var(--mist);break-inside:avoid;font-size:.97rem}
+@media(max-width:560px){.amenities{columns:1}}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem;margin-top:2rem}
+.gallery div{aspect-ratio:1;background:var(--mist) center/cover}
+.gallery div:nth-child(1){grid-column:span 4;grid-row:span 2;aspect-ratio:auto}
+.gallery div:nth-child(n+2){grid-column:span 2}
+@media(max-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery div:nth-child(n){grid-column:auto;grid-row:auto;aspect-ratio:1}}
+.owners{background:var(--white)}
+form{display:grid;gap:1rem;max-width:560px}
+label{font-weight:500;font-size:.95rem;display:grid;gap:.35rem}
+input,textarea{font:inherit;padding:.8rem .9rem;border:1px solid #b8c4c9;border-radius:2px;background:var(--white)}
+textarea{min-height:120px;resize:vertical}
+.book{text-align:center;background:var(--ink);color:var(--white)}
+.book p{margin:0 auto 2rem;color:#d3dde1;max-width:50ch}
+footer.site{background:#0b161e;color:#9fb0b8;padding:2rem 0;font-size:.9rem}
+footer.site .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+footer.site img{height:44px;width:auto}
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2.5rem}
+.reviews blockquote{border-left:2px solid var(--brass);padding-left:1.2rem}
+.reviews blockquote:first-child{grid-column:1/-1}
+.reviews blockquote:first-child p{max-width:75ch}
+.reviews cite{display:block;margin-top:.8rem;font-style:normal;font-size:.92rem;color:#55646d}
+.reviews-link{margin-top:2.5rem}
+@media(max-width:820px){.reviews{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#top" aria-label="DC Pinnacle Properties home"><img src="images/logo-light.png" alt="DC Pinnacle Properties"></a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why us</a></li>
+        <li><a href="#home">Featured home</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#owners">For owners</a></li>
+        <li><a class="btn" href="https://www.airbnb.com/rooms/1639455299491822317" target="_blank" rel="noopener">Book a stay</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Short-term rental care for St. Augustine homes</h1>
+      <p>We help homeowners turn their property into steady income, with guest-ready homes and hands-off management in Florida's oldest city.</p>
+      <div class="actions">
+        <a class="btn" href="#owners">Talk to us about your property</a>
+        <a class="btn ghost" href="#home">See a home we run</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we take care of</h2>
+      <p class="lead">You own the home. We handle the day-to-day of running it as a short-term rental.</p>
+      <!-- TODO: edit this list so it matches exactly what you plan to offer owners -->
+      <div class="services">
+        <div><h3>Listing and guest messaging</h3><p>Polished listings and fast, friendly replies from inquiry to checkout.</p></div>
+        <div><h3>Cleaning and turnovers</h3><p>Every stay ends with a professional reset, so the next guest arrives to a spotless home.</p></div>
+        <div><h3>Pricing and calendar</h3><p>Rates adjusted around St. Augustine's seasons, events and busy weekends.</p></div>
+        <div><h3>Secure check-in</h3><p>Smart-lock entry with a unique code for each guest and clear arrival instructions.</p></div>
+        <div><h3>Maintenance coordination</h3><p>Issues are caught early and handled with trusted local vendors.</p></div>
+        <div><h3>Clear owner communication</h3><p>You always know how your home is performing and what is happening with it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" style="background:var(--white)">
+    <div class="wrap">
+      <h2>Why choose us?</h2>
+      <p class="lead">We transform property ownership into a seamless, profitable experience, eliminating stress and maximizing returns. Our team ensures your property is cared for with the highest standards, allowing you to enjoy worry-free income. At the same time, we provide guests with unforgettable stays that exceed expectations.</p>
+      <!-- TODO: every card below is a promise to owners. Edit each one so it is 100% true for your business. -->
+      <div class="services">
+        <div><h3>Property protection</h3><p>We provide insurance protection up to $2 million, safeguarding your investment from unforeseen challenges, safeguarding your investment from unforeseen challenges.</p></div>
+        <div><h3>Smart security</h3><p>We prioritize safety with smart locks that give every guest a unique code, clear house rules and careful guest screening for complete peace of mind.</p></div>
+        <div><h3>Premium property care</h3><p>Your home stays guest-ready with our professional cleaning team upholding the highest standards after every stay, preserving its condition.</p></div>
+        <div><h3>Fewer vacancy worries</h3><p>Skip the costly turnover cycle of repainting, cleaning and downtime. Active pricing and calendar management keep your property working for you all year long.</p></div>
+        <div><h3>Clear finances</h3><p>Transparent reporting shows what your home earned and where every dollar went, so you can plan with confidence.</p></div>
+        <div><h3>Reliable monthly earnings</h3><p>Say goodbye to late rent and tenant issues. Your earnings are paid out on a clear, on-time monthly schedule.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="dark-band">
+    <div class="wrap split">
+      <div class="photo" role="img" aria-label="Living room with a beach painting and striped rug" style="background-image:url('images/entry.jpg')"></div>
+      <div>
+        <h2>The Travelers Dream Oasis</h2>
+        <p class="lead">A home we run ourselves: a bright one-bedroom in St. Augustine, styled with a coastal feel and set up the way we set up every home: comfortable, well stocked and easy to enjoy.</p>
+        <ul class="facts">
+          <li><strong>1</strong>bedroom</li>
+          <li><strong>1</strong>bath</li>
+          <li><strong>4</strong>guests</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="https://www.airbnb.com/rooms/1639455299491822317" target="_blank" rel="noopener">View on Airbnb</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom:0">
+    <div class="wrap">
+      <h2>Inside the home</h2>
+      <div class="gallery">
+        <div role="img" aria-label="King bed with palm tree artwork" style="background-image:url('images/bedroom.jpg')"></div>
+        <div role="img" aria-label="Front porch with two yellow chairs" style="background-image:url('images/porch.jpg')"></div>
+        <div role="img" aria-label="Sofa with a beach painting" style="background-image:url('images/sofa.jpg')"></div>
+        <div role="img" aria-label="Workspace by the window" style="background-image:url('images/desk.jpg')"></div>
+        <div role="img" aria-label="Kitchen details" style="background-image:url('images/kitchen.jpg')"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Amenities</h2>
+      <p class="lead" style="margin-bottom:1.6rem">Everything a guest needs for a short trip or a longer stay.</p>
+      <ul class="amenities">
+        <li>Air conditioning and heating</li>
+        <li>Beach access nearby</li>
+        <li>Free parking on premises</li>
+        <li>Wi-Fi</li>
+        <li>Dedicated workspace</li>
+        <li>TV</li>
+        <li>Full kitchen with oven, stove, microwave and refrigerator</li>
+        <li>Coffee maker and coffee</li>
+        <li>Blender, hot water kettle and freezer</li>
+        <li>Cooking basics, dishes, silverware and wine glasses</li>
+        <li>Washer and dryer</li>
+        <li>Cotton bed linens, extra pillows and blankets</li>
+        <li>Room-darkening shades</li>
+        <li>Towels, shampoo, conditioner, body soap and shower gel</li>
+        <li>Clothing steamer, hangers and clothing storage</li>
+        <li>Patio with outdoor furniture</li>
+        <li>Single-level home</li>
+        <li>Smoke and carbon monoxide alarms</li>
+        <li>Fire extinguisher and first aid kit</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reviews" style="background:var(--white)">
+    <div class="wrap">
+      <h2>What guests say</h2>
+      <p class="lead">Words from guests who stayed at The Travelers Dream Oasis.</p>
+      <div class="reviews">
+        <blockquote>
+          <p>This place is ideally located to tour St. Augustine - park the car and take an easy 20 minute walk to the historic district, stopping at cool shops along the way. It’s way easier to leave the car and walk than it is to find a parking spot and/or pay $20 per day. When you need a break from sightseeing, grab a beach chair from the house and drive to any of the nearby beaches. The bed and sofa are really comfortable, the kitchen is thoughtfully stocked (thank you for the coffee!!), and the shower is great - and the entire house was super clean. The street is quiet and a nice surprise was hanging in the front yard, reading at dusk, listening to birds and squirrels. Publix grocery is an easy drive, and the house is walking distance to restaurants and ice cream. The Oasis is the ideal place to stay as you explore. I hope to come back!</p>
+          <cite>Abby</cite>
+        </blockquote>
+        <blockquote>
+          <p>We are frequent AirBnb stayers, and this one is amongst our top favorites! The location was incredible; close by to all the things to do, while still feeling tucked away and private. It was the perfect place for our small family with a toddler to stay on this little weekend getaway. If we come back to the area, we would definitely stay here again and recommend to friends/family. Thanks for a great stay!!</p>
+          <cite>Brianna</cite>
+        </blockquote>
+        <blockquote>
+          <p>Highly recommend this home away from home! Owners are very responsive, detailed and professional. Great location on a quiet side street. You cannot hear the busy cars or trains from this location. This home has everything you need and more. Very clean throughout and extremely comfortable bed! The owners thought of every little detail that vacationers may need from a snack to laundry detergent and cooking oil. I will definitely book here again and recommend to friends and family! This home is truly a Travelers Dream Oasis!!</p>
+          <cite>Jenelle</cite>
+        </blockquote>
+      </div>
+      <p class="reviews-link"><a href="https://www.airbnb.com/rooms/1639455299491822317" target="_blank" rel="noopener">Read all reviews on Airbnb</a></p>
+    </div>
+  </section>
+
+  <section class="book">
+    <div class="wrap">
+      <h2>Visiting St. Augustine?</h2>
+      <p>Choose your dates and book our featured home securely through Airbnb.</p>
+      <a class="btn" href="https://www.airbnb.com/rooms/1639455299491822317" target="_blank" rel="noopener">Check availability on Airbnb</a>
+    </div>
+  </section>
+
+  <section id="owners" class="owners">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <h2>Own a home in the St. Augustine area?</h2>
+        <p class="lead">Tell us a little about your property and we will reach out to talk through your options. There is no obligation.</p>
+      </div>
+      <!-- Netlify Forms: submissions are emailed to the address you set in the Netlify dashboard (Forms > Notifications). No email address appears on this page. -->
+      <form name="owner-inquiry" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="owner-inquiry">
+        <p hidden><label>Leave blank <input name="bot-field"></label></p>
+        <label>Name <input type="text" name="name" required autocomplete="name"></label>
+        <label>Email <input type="email" name="email" required autocomplete="email"></label>
+        <label>Phone (optional) <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Property address or neighborhood <input type="text" name="property"></label>
+        <label>Anything we should know? <textarea name="message"></textarea></label>
+        <button class="btn dark" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="images/logo-light.png" alt="DC Pinnacle Properties">
+    <span>&copy; <span id="yr">2026</span> DC Pinnacle Properties. St. Augustine, Florida.</span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
